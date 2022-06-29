@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
   buttonCreateAccount:{
     width: '65%',
     height: 60,
-    backgroundColor:theme.colors.button_background,
+    backgroundColor:theme.colors.button_background, 
     borderRadius:10,
     marginTop:37,
     marginBottom: 15
