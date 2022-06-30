@@ -5,7 +5,8 @@ export default {
     button_background:'#FFDE69',
     input_color: '#050522',
     text_color_black: '#000000',
-    text_color_white:'#F4F4F4'
+    text_color_white:'#F4F4F4',
+    background_modal: '#FFECAA'
   },
 
   fonts: {
