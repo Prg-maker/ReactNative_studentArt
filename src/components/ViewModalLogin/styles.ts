@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.background_modal,
     borderTopStartRadius:40,
     borderTopRightRadius:40,
-    paddingTop:25,
     paddingHorizontal: 25
   },
 
@@ -42,10 +41,19 @@ export const styles = StyleSheet.create({
     marginTop:25,
     borderWidth:2,
     borderColor:theme.colors.input_color,
-    borderRadius:10
-    
+    borderRadius:10,
+    fontFamily:theme.fonts.fontMedium,
+    alignItems:'center',
+    position: 'relative',
 
   },
-
+  containerImg:{
+    width: '5%',
+    alignItems:'flex-end',
+    top:-35,
+    left: 300,
+  },
+  imageInput:{
+  }
 
 })
