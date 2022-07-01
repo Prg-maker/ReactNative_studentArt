@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
   },
 
   content:{
-    flex: 1,
     flexDirection: 'row',
     justifyContent:'space-between',
     marginTop:29 
@@ -28,5 +27,25 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.fontMedium,
     color: theme.colors.input_color,
     fontSize:18
-  }
+  },
+  email:{
+    paddingTop: 27,
+    paddingBottom:4,
+    fontFamily:theme.fonts.fontMedium,
+    fontSize:16
+
+  },
+  input:{
+    width: '100%',
+    height: 50,
+    paddingLeft:25,
+    marginTop:25,
+    borderWidth:2,
+    borderColor:theme.colors.input_color,
+    borderRadius:10
+    
+
+  },
+
+
 })
