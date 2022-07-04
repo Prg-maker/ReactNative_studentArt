@@ -9,8 +9,6 @@ type ViewModalProps = ModalProps&{
 export function ViewModalLogin({closeModal , ...rest}:ViewModalProps){
   return(
     <Modal  transparent  animationType="slide" statusBarTranslucent {...rest}>
-      <View style={styles.background}>
-
     
       <View  style={styles.container}>
  
@@ -53,7 +51,6 @@ export function ViewModalLogin({closeModal , ...rest}:ViewModalProps){
 
 
 
-      </View>
     </Modal>
   )
 }
