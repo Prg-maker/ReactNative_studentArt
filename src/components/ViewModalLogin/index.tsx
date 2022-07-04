@@ -2,7 +2,6 @@ import { Modal, ModalProps, Text, TouchableOpacity, View , Image, TextInput , Sc
 import {styles} from './styles'
 import  XCircle from '../../assets/XCircle.png'
 import  CadeadoImg from '../../assets/cadeado.png'
-import theme from "../../theme";
 type ViewModalProps = ModalProps&{
   closeModal: ()=> void
 }

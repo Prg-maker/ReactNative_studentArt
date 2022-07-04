@@ -1,7 +1,11 @@
-  import {StyleSheet} from 'react-native'
+import {StyleSheet} from 'react-native'
 import theme from '../../theme'
 
 export const styles = StyleSheet.create({
+  background:{
+    height: '100%',
+    backgroundColor:'rgba(5, 5, 34, 0.5)'
+  },
   container:{
     flex: 1,
     marginTop: 371,
@@ -12,10 +16,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 25
   },
 
-  background:{
-    height: '100%',
-    backgroundColor:'rgba(5, 5, 34, 0.5)'
-  },
+
 
   header:{
     flexDirection: 'row',

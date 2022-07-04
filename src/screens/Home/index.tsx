@@ -2,17 +2,32 @@ import { useState } from "react";
 import { Image, Text, View, TouchableOpacity , Modal} from "react-native";
 import StudentImg from "../../assets/student.png";
 import { ViewModalLogin } from "../../components/ViewModalLogin";
+import { ViewModalRegister } from "../../components/ViewModalRegister";
 import { styles } from "./styles";
 
 export function Home() {
-  const [openModal , setOpenModal] = useState(false)
+  const [openModalLogin , setOpenModalLogin] = useState(false)
 
-  function IsOpenModalView(){
-    setOpenModal(true)
+  const [openModalRegister , setOpenModalRegister] = useState(false)
+
+  function IsOpenModalViewLogin(){
+    setOpenModalLogin(true)
   }
-  function handleClose(){
-    setOpenModal(false)
+  function handleCloseViewModalLogin(){
+    setOpenModalLogin(false)
   }
+
+
+
+  function IsOpenModalViewRegister(){
+    setOpenModalRegister(true)
+  }
+
+  function handleCloseViewModalRegister(){
+    setOpenModalRegister(false)
+  }
+
+  
 
   return (
     <View style={styles.container}>
@@ -24,17 +39,19 @@ export function Home() {
         eiusmod
       </Text>
 
-      <TouchableOpacity style={styles.buttonCreateAccount}>
+      <TouchableOpacity onPress={IsOpenModalViewRegister} style={styles.buttonCreateAccount}>
         <Text style={styles.titleButtonCreate}>Create Account</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={IsOpenModalView} style={styles.buttonLogin}>
+      <TouchableOpacity onPress={IsOpenModalViewLogin} style={styles.buttonLogin}>
         <Text  style={styles.buttonLoginTitle}>Login</Text>
       </TouchableOpacity>
      
       <Text style={styles.Direction}>All Right Reserved @2021</Text>
 
-      <ViewModalLogin closeModal={handleClose} visible={openModal} />
+      <ViewModalRegister closeModal={handleCloseViewModalRegister} visible={openModalRegister}/>
+
+      <ViewModalLogin closeModal={handleCloseViewModalLogin} visible={openModalLogin} />
    
 
     </View>
