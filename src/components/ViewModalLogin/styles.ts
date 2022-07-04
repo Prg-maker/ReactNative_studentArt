@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.background_modal,
     borderTopStartRadius:40,
     borderTopRightRadius:40,
+    paddingTop:25,
     paddingHorizontal: 25
   },
 
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
     backgroundColor:'rgba(5, 5, 34, 0.5)'
   },
 
-  content:{
+  header:{
     flexDirection: 'row',
     justifyContent:'space-between',
     marginTop:29 
@@ -53,7 +54,47 @@ export const styles = StyleSheet.create({
     top:-35,
     left: 300,
   },
-  imageInput:{
+  textForgotPassword:{
+    fontFamily: theme.fonts.fontMedium,
+    color:theme.colors.input_color,
+    textAlign:'right'
+  },
+  buttonLogin:{
+    width: '100%',
+    backgroundColor:theme.colors.input_color,
+    height: 60,
+    borderRadius:15,
+    marginTop: 5
+
+  },
+  textLogin:{
+    color: theme.colors.button_background,
+    fontFamily: theme.fonts.fontBold,
+    fontSize: 19,
+    lineHeight: 29,
+    textAlign:'center',
+    paddingVertical: 13
+    
+  },
+  containerTextRegister:{
+    fontFamily: theme.fonts.fontBold,
+    color: theme.colors.input_color,
+    textAlign:'center',
+    flex: 1,
+    flexDirection:'row'
+
+    
+    
+  },
+  buttonRegister:{
+    paddingTop:10,
+    textAlign:'center',
+    height: '100%'
+
+  },
+  textRegister:{
+    color:theme.colors.text_color_red,
+    fontFamily:theme.fonts.fontBold,
   }
 
 })

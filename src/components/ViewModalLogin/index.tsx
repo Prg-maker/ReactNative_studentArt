@@ -15,7 +15,7 @@ export function ViewModalLogin({closeModal , ...rest}:ViewModalProps){
     
       <View  style={styles.container}>
  
-        <View style={styles.content}>
+        <View style={styles.header}>
 
           <Text style={styles.titleWelcome}>Welcome Back!!!</Text>
           <TouchableOpacity onPress={closeModal}>
@@ -32,16 +32,27 @@ export function ViewModalLogin({closeModal , ...rest}:ViewModalProps){
           <Text style={styles.email}>username/email</Text>
           <TextInput  style={styles.input} keyboardType="email-address" placeholder="info@example.com"/>
 
-          <TextInput style={styles.input} keyboardType="visible-password" placeholder="password"/>
+          <TextInput style={styles.input} keyboardType="decimal-pad" placeholder="password"/>
           <View style={styles.containerImg}>
-            <Image style={styles.imageInput} source={CadeadoImg}/>
-
+            <Image  source={CadeadoImg}/>
           </View>
             
         </View>
 
-      
+
+        <Text style={styles.textForgotPassword}>Forgot Password?</Text>
+
+        <TouchableOpacity style={styles.buttonLogin}>
+          <Text style={styles.textLogin}>Login</Text>
+        </TouchableOpacity>
+
+        <Text style={styles.containerTextRegister}>Dont have an account? 
+          <TouchableOpacity style={styles.buttonRegister}><Text style={styles.textRegister}>Register</Text></TouchableOpacity>
+        </Text>
+
       </View>
+
+
 
       </View>
     </Modal>
