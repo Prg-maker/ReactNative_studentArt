@@ -1,4 +1,4 @@
-import { Image, Modal, ModalProps, TouchableOpacity, View , Text} from "react-native";
+import { Image, Modal, ModalProps, TouchableOpacity, View , Text, TextInput} from "react-native";
 import  XCircle from '../../assets/XCircle.png'
 
 import {styles} from './styles'
@@ -26,10 +26,22 @@ export function ViewModalRegister({closeModal, ...rest}:ViewModalRegisterProps){
         <Image style={{
           width: 30,
           height: 30
-        }} source={XCircle}/>
+        }} source=  {XCircle}/>
       </TouchableOpacity>
       </View>
 
+
+
+      <View>
+          <Text style={styles.email}>username/email</Text>
+          <TextInput  style={styles.input} keyboardType="email-address" placeholder="info@example.com"/>
+          <TextInput style={styles.input} keyboardType="default" placeholder="course"/>
+
+          <TextInput style={styles.input} keyboardType="decimal-pad" placeholder="default"/>
+          <TextInput style={styles.input} keyboardType="decimal-pad" placeholder="confirm password"/>
+         
+            
+      </View>
 
 
 

@@ -30,4 +30,24 @@ export const styles = StyleSheet.create({
     fontSize:28,
     marginTop:5
   },
+
+  email:{
+    paddingTop: 10,
+    fontFamily:theme.fonts.fontMedium,
+    fontSize:16
+
+  },
+  input:{
+    width: '100%',
+    height: 50,
+    paddingLeft:25,
+    marginTop:20,
+    borderWidth:2,
+    borderColor:theme.colors.input_color,
+    borderRadius:10,
+    fontFamily:theme.fonts.fontMedium,
+    alignItems:'center',
+    position: 'relative',
+
+  },
 })
