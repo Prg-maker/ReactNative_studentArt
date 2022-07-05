@@ -68,5 +68,15 @@ export const styles = StyleSheet.create({
   },
   linkToLogin:{
     flexDirection:'row',
+    justifyContent:'center',
+
+  },
+  text:{
+    fontFamily:theme.fonts.fontMedium,
+    color: theme.colors.color_background
+  },
+  textLogin:{
+    fontFamily:theme.fonts.fontBold,
+    color: theme.colors.text_color_red
   }
 })

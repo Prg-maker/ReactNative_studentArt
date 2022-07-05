@@ -49,9 +49,9 @@ export function ViewModalRegister({closeModal, ...rest}:ViewModalRegisterProps){
       
 
       <View style={styles.linkToLogin}>
-        <Text>Already have account?</Text>
+        <Text style={styles.text}>Already have account? </Text>
         <TouchableOpacity >
-          <Text>Login</Text>
+          <Text style={styles.textLogin}>Login</Text>
         </TouchableOpacity>
       </View>
    
