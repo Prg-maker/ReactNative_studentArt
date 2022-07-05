@@ -4,10 +4,11 @@ import  XCircle from '../../assets/XCircle.png'
 import {styles} from './styles'
 
 type ViewModalRegisterProps = ModalProps & {
-  closeModal: ()=> void
+  closeModal: ()=> void,
+  toggleLogin:()=> void
 }
 
-export function ViewModalRegister({closeModal, ...rest}:ViewModalRegisterProps){
+export function ViewModalRegister({closeModal,toggleLogin , ...rest}:ViewModalRegisterProps){
   return(
 
     <Modal transparent  animationType="slide" statusBarTranslucent {...rest}>
@@ -50,7 +51,7 @@ export function ViewModalRegister({closeModal, ...rest}:ViewModalRegisterProps){
 
       <View style={styles.linkToLogin}>
         <Text style={styles.text}>Already have account? </Text>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={toggleLogin}>
           <Text style={styles.textLogin}>Login</Text>
         </TouchableOpacity>
       </View>

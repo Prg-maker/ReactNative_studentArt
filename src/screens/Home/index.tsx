@@ -33,6 +33,10 @@ export function Home() {
   }
 
   
+  function handleToggleLogin(){
+    setOpenModalRegister(false)
+    setOpenModalLogin(true)
+  }
 
   return (
     <View style={styles.container}>
@@ -54,7 +58,7 @@ export function Home() {
      
       <Text style={styles.Direction}>All Right Reserved @2021</Text>
 
-      <ViewModalRegister closeModal={handleCloseViewModalRegister} visible={openModalRegister}/>
+      <ViewModalRegister  toggleLogin={handleToggleLogin} closeModal={handleCloseViewModalRegister} visible={openModalRegister}/>
 
       <ViewModalLogin toggleRegister={handleToggleRegister} closeModal={handleCloseViewModalLogin} visible={openModalLogin} />
    
