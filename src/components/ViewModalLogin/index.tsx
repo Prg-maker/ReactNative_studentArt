@@ -3,10 +3,11 @@ import {styles} from './styles'
 import  XCircle from '../../assets/XCircle.png'
 import  CadeadoImg from '../../assets/cadeado.png'
 type ViewModalProps = ModalProps&{
-  closeModal: ()=> void
+  closeModal: ()=> void,
+  toggleRegister:()=> void
 }
 
-export function ViewModalLogin({closeModal , ...rest}:ViewModalProps){
+export function ViewModalLogin({closeModal , toggleRegister, ...rest}:ViewModalProps){
   return(
     <Modal  transparent  animationType="slide" statusBarTranslucent {...rest}>
     
@@ -45,7 +46,7 @@ export function ViewModalLogin({closeModal , ...rest}:ViewModalProps){
 
         <View style={styles.containerTextRegister}>
           <Text style={styles.text} >Dont have an account? </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={toggleRegister}>
             <Text style={styles.textRegister}>Register</Text>
           </TouchableOpacity>
         </View>

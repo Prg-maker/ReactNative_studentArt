@@ -27,6 +27,11 @@ export function Home() {
     setOpenModalRegister(false)
   }
 
+  function handleToggleRegister(){
+    setOpenModalLogin(false)
+    setOpenModalRegister(true)
+  }
+
   
 
   return (
@@ -51,7 +56,7 @@ export function Home() {
 
       <ViewModalRegister closeModal={handleCloseViewModalRegister} visible={openModalRegister}/>
 
-      <ViewModalLogin closeModal={handleCloseViewModalLogin} visible={openModalLogin} />
+      <ViewModalLogin toggleRegister={handleToggleRegister} closeModal={handleCloseViewModalLogin} visible={openModalLogin} />
    
 
     </View>
