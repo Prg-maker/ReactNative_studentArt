@@ -4,3 +4,4 @@ node_modules
 redmin.md
 yarn.lock
 yarn-error.log
+coverage

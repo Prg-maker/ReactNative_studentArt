@@ -13,7 +13,12 @@ export class CreateUserUseCase{
     prismaUserRepository: PrismaUserRepository
   ){}
 
-  async execute(){
+  async execute(response:CreateUserResponse){
+    const {email,course,password} = response
+
+    if(!email){
+      throw new Error('email is not provided')
+    }
 
   }
 }
