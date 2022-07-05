@@ -50,4 +50,23 @@ export const styles = StyleSheet.create({
     position: 'relative',
 
   },
+  buttonRegister:{
+    width: '100%',
+    height: 60,
+    backgroundColor:theme.colors.input_color,
+    marginVertical:15,
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:15,
+
+
+  },
+  textRegister:{
+    color: theme.colors.button_background,
+    fontFamily:theme.fonts.fontBold,
+    fontSize:20
+  },
+  linkToLogin:{
+    flexDirection:'row',
+  }
 })

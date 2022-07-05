@@ -37,13 +37,24 @@ export function ViewModalRegister({closeModal, ...rest}:ViewModalRegisterProps){
           <TextInput  style={styles.input} keyboardType="email-address" placeholder="info@example.com"/>
           <TextInput style={styles.input} keyboardType="default" placeholder="course"/>
 
-          <TextInput style={styles.input} keyboardType="decimal-pad" placeholder="default"/>
-          <TextInput style={styles.input} keyboardType="decimal-pad" placeholder="confirm password"/>
+          <TextInput style={styles.input} keyboardType="number-pad" placeholder="password"/>
+          <TextInput style={styles.input} keyboardType="number-pad" placeholder="confirm password"/>
          
             
       </View>
+        
+      <TouchableOpacity style={styles.buttonRegister}>
+        <Text style={styles.textRegister}>Register</Text>
+      </TouchableOpacity>
+      
 
-
+      <View style={styles.linkToLogin}>
+        <Text>Already have account?</Text>
+        <TouchableOpacity >
+          <Text>Login</Text>
+        </TouchableOpacity>
+      </View>
+   
 
 
 

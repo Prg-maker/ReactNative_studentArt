@@ -43,9 +43,13 @@ export function ViewModalLogin({closeModal , ...rest}:ViewModalProps){
           <Text style={styles.textLogin}>Login</Text>
         </TouchableOpacity>
 
-        <Text style={styles.containerTextRegister}>Dont have an account? 
-          <TouchableOpacity style={styles.buttonRegister}><Text style={styles.textRegister}>Register</Text></TouchableOpacity>
-        </Text>
+        <View style={styles.containerTextRegister}>
+          <Text style={styles.text} >Dont have an account? </Text>
+          <TouchableOpacity>
+            <Text style={styles.textRegister}>Register</Text>
+          </TouchableOpacity>
+        </View>
+       
 
       </View>
 

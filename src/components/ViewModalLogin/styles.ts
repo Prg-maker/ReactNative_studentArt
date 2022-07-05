@@ -62,7 +62,8 @@ export const styles = StyleSheet.create({
     backgroundColor:theme.colors.input_color,
     height: 60,
     borderRadius:15,
-    marginTop: 5
+    marginTop: 5,
+    justifyContent:'center'
 
   },
   textLogin:{
@@ -71,28 +72,23 @@ export const styles = StyleSheet.create({
     fontSize: 19,
     lineHeight: 29,
     textAlign:'center',
-    paddingVertical: 13
     
   },
   containerTextRegister:{
-    fontFamily: theme.fonts.fontBold,
-    color: theme.colors.input_color,
-    textAlign:'center',
-    flex: 1,
-    flexDirection:'row'
+  
+    flexDirection:'row',
+    justifyContent:'center',
+    marginTop:12,
 
-    
     
   },
-  buttonRegister:{
-    paddingTop:10,
-    textAlign:'center',
-    height: '100%'
-
+  text:{
+    fontFamily:theme.fonts.fontMedium,
+    color: theme.colors.color_background
   },
   textRegister:{
-    color:theme.colors.text_color_red,
     fontFamily:theme.fonts.fontBold,
+    color: theme.colors.text_color_red
   }
 
 })
