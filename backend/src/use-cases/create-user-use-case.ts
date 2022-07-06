@@ -10,7 +10,7 @@ interface CreateUserResponse{
 export class CreateUserUseCase{
 
   constructor(
-    prismaUserRepository: PrismaUserRepository
+    private prismaUserRepository: PrismaUserRepository
   ){}
 
   async execute(response:CreateUserResponse){
@@ -19,6 +19,20 @@ export class CreateUserUseCase{
     if(!email){
       throw new Error('email is not provided')
     }
+    if(!course){
+      throw new Error('course is not provided')
+    }
+    if(!password){
+      throw new Error('password is not provided')
+    }
+
+    await this.prismaUserRepository.create({
+      email,
+      course,
+      password
+    })
+
+
 
   }
 }
