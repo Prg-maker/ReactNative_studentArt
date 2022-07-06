@@ -10,6 +10,9 @@ export function Home() {
 
   const [openModalRegister , setOpenModalRegister] = useState(false)
 
+
+
+
   function IsOpenModalViewLogin(){
     setOpenModalLogin(true)
   }
@@ -37,6 +40,7 @@ export function Home() {
     setOpenModalRegister(false)
     setOpenModalLogin(true)
   }
+
 
   return (
     <View style={styles.container}>
